@@ -1,0 +1,33 @@
+Politecnico di Milano
+Piano di Studi - A.A. 2023
+Nome: MANUEL
+Cognome: GATZKE
+Matricola: 242223
+Corso di Studi: Mag. (ord. 270) 471 - BIOMEDICAL ENGINEERING - INGEGNERIA BIOMEDICA (MI)
+Indirizzo: INGEGNERIA PER CELLULE TESSUTI E BIOTECNOLOGIE - CELLS, TISSUES AND
+BIOTECHNOLOGY - (BCT)
+Posizione Convenzionale:
+Anno di Corso: 1
+Semestre di Ingresso: 1
+Data Presentazione: Sun Sep 10 11:56:17 CEST 2023
+Data Modifica Semestrale:
+e-mail: manuel.gatzke@mail.polimi.it
+Telefono:
+Cellulare: +491639037541
+
+AA AC Sem Pos Cfu Codice Insegnamento Stato Data Voto L CdL Indir
+2023 1 2 E 05 054085 BIOCHIP N    471 BCT
+2023 1 1 E 05 096053 BIOENGINEERING OF NEUROSENSORY SYSTEMS N    471 BCT
+2023 1 2 E 05 096054 BIOENGINEERING OF THE RESPIRATORY SYSTEM N    471 BCT
+2023 1 1 E 05 099282 BIOINFORMATICA E GENOMICA FUNZIONALE N    471 BCT
+2023 1 1 E 10 083042 BIOINGEGNERIA CELLULARE N    471 BCT
+2023 1 2 E 10 083047 BIOMATERIALI [C.I.] N    471 BCT
+2023 1 1 E 07 096269 BIOMOLECULES: STRUCTURE AND FUNCTIONS N    471 BCT
+2023 1 1 E 10 096253 FENOMENI DI TRASPORTO NEI SISTEMI BIOLOGICI N    471 BCT
+2023 1 2 E 05 058013 NANOMEDICINE AND PHARMACEUTICA L INNOVATION N    471 BCT
+2023 1 1 O 05 089180 NUMERICAL ANALYSIS N    481 T2A
+Colonna Pos: 'E'=Effettivo, 'S'=Soprannumero, 'A'=Autonomo, 'O'=Obbligo, 'D'=Debito
+Colonna Stato: 'N'=Non sostenuto, 'S'=Sostenuto, 'C'=Convalidato, 'A'=Autocertificato, 'P'=Ripete            
+
+Media voti: (media riferita al piano approvato dell'anno precedente) N.D. - Totale crediti piano: 67.0 - Totale crediti utili per la Laurea: 67.0 - Totale crediti in
+soprannumero: 0.0 - Totale crediti richiesti: 67.0

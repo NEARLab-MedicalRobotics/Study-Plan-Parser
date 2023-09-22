@@ -1,0 +1,29 @@
+Politecnico di Milano
+Piano di Studi - A.A. 2023
+Nome: ALI
+Cognome: ESTAHBANATI
+Matricola: 249536
+Corso di Studi: Mag. (ord. 270) 471 - BIOMEDICAL ENGINEERING - INGEGNERIA BIOMEDICA (MI)
+Indirizzo: BIOMECCANICA E BIOMATERIALI - BIOMECHANICS AND BIOMATERIALS - (BBB)
+Posizione Convenzionale:
+Anno di Corso: 1
+Semestre di Ingresso: 1
+Data Presentazione: Tue Sep 12 22:53:28 CEST 2023
+Data Modifica Semestrale:
+e-mail: ali.estahbanati@mail.polimi.it
+Telefono: +9834321122160
+Cellulare: +989395709207
+
+AA AC Sem Pos Cfu Codice Insegnamento Stato Data Voto L CdL Indir
+2023 1 2 A 05 054918 ADVANCED TOPICS IN BIOMEDICAL ENGINEERING N    471 BBB
+2023 1 2 A 10 051139 ANALISI E ORGANIZZAZIONE DI SISTEMI SANITARI (C.I.) N    471 BBB
+2023 1 1 E 12 096233 MATHEMATICAL AND NUMERICAL METHODS IN ENGINEERING [I.C.] N    471 BBB
+2023 1 1 E 05 096236 MECHANICS OF BIOLOGICAL STRUCTURES N    471 BBB
+2023 1 1 E 10 083122 PROGETTAZIONE DI ENDOPROTESI [C.I.] N    471 BBB
+2023 1 2 A 10 057281 TECHNOLOGIES FOR SENSORS AND CLINICAL INSTRUMENTATIO N - BIOE 430 N    471 BBB
+2023 1 2 E 10 083149 VALUTAZIONE FUNZIONALE E RIABILITAZIONE MOTORIA [C.I.] N    471 BBB
+Colonna Pos: 'E'=Effettivo, 'S'=Soprannumero, 'A'=Autonomo, 'O'=Obbligo, 'D'=Debito
+Colonna Stato: 'N'=Non sostenuto, 'S'=Sostenuto, 'C'=Convalidato, 'A'=Autocertificato, 'P'=Ripete            
+
+Media voti: (media riferita al piano approvato dell'anno precedente) N.D. - Totale crediti piano: 62.0 - Totale crediti utili per la Laurea: 62.0 - Totale crediti in
+soprannumero: 0.0 - Totale crediti richiesti: 62.0

@@ -1,0 +1,36 @@
+Politecnico di Milano
+Piano di Studi - A.A. 2023
+Nome: SERENA
+Cognome: VECCHI
+Matricola: 927563
+Corso di Studi: Mag. (ord. 270) 471 - BIOMEDICAL ENGINEERING - INGEGNERIA BIOMEDICA (MI)
+Indirizzo: INGEGNERIA CLINICA - CLINICAL ENGINEERING - (BCI)
+Posizione Convenzionale:
+Anno di Corso: 2
+Semestre di Ingresso: 1
+Data Presentazione: Tue Sep 12 10:20:05 CEST 2023
+Data Modifica Semestrale:
+e-mail: serena.vecchi@mail.polimi.it
+Telefono:
+Cellulare: +393489374201
+
+AA AC Sem Pos Cfu Codice Insegnamento Stato Data Voto L CdL Indir
+2018 1 2 E 10 096281 BIOMEDICAL SIGNAL PROCESSING AND MEDICAL IMAGES - BIOE 440-421 S 14-01-2020 18  471 BCI
+2019 1 2 E 05 083449 BREVETTI E PROPRIETA INDUSTRIALE S 23-07-2020 24  471 BCI
+2019 1 1 E 05 054298 CLINICAL TECHNOLOGY ASSESSMENT S 18-02-2020 27  471 BCI
+2019 1 2 E 05 097337 HEALTH CARE MANAGEMENT S 25-06-2020 29  471 BCI
+2020 1 1 E 10 083042 BIOINGEGNERIA CELLULARE S 07-09-2021 23  471 BCI
+2020 1 2 E 05 099277 COMPUTATIONAL BIOLOGY OF THE HEART S 21-01-2022 20  471 BCI
+2020 1 1 E 05 096287 MANAGEMENT OF ORGANIZATIONS AND PROJECTS S 11-02-2021 28  471 BCI
+2021 1 1 E 05 054102 MACHINE LEARNING S 20-07-2022 18  471 BCI
+2021 1 2 E 10 054296 MEDICAL INFORMATICS S 11-01-2023 27  471 BCI
+2022 2 2 E 10 083047 BIOMATERIALI [C.I.] N    471 BCI
+2022 2 1 E 10 054301 E-HEALTH METHODS AND APPLICATIONS [I.C.] S 10-02-2023 23  471 BCI
+2022 2 2 E 10 054974 TIROCINIO BIC C 30-06-2023 00  471 BCI
+2023 2 1 E 10 052372 NEUROENGINEER ING [I.C.] N    471 BCI
+2023 2 2 E 20 051175 PROVA FINALE (BIO LM) N    471 BCI
+Colonna Pos: 'E'=Effettivo, 'S'=Soprannumero, 'A'=Autonomo, 'O'=Obbligo, 'D'=Debito
+Colonna Stato: 'N'=Non sostenuto, 'S'=Sostenuto, 'C'=Convalidato, 'A'=Autocertificato, 'P'=Ripete            
+
+Media voti: (media riferita al piano approvato dell'anno precedente) 23.43 - Totale crediti piano: 120.0 - Totale crediti utili per la Laurea: 120.0 - Totale crediti in
+soprannumero: 0.0 - Totale crediti richiesti: 30.0

@@ -1,0 +1,31 @@
+Politecnico di Milano
+Piano di Studi - A.A. 2023
+Nome: CHIARA FRANCESCA
+Cognome: GHERA
+Matricola: 252141
+Corso di Studi: Mag. (ord. 270) 471 - BIOMEDICAL ENGINEERING - INGEGNERIA BIOMEDICA (MI)
+Indirizzo: INGEGNERIA PER CELLULE TESSUTI E BIOTECNOLOGIE - CELLS, TISSUES AND
+BIOTECHNOLOGY - (BCT)
+Posizione Convenzionale:
+Anno di Corso: 1
+Semestre di Ingresso: 1
+Data Presentazione: Thu Sep 14 17:24:54 CEST 2023
+Data Modifica Semestrale:
+e-mail: chiarafrancesca.ghera@mail.polimi.it
+Telefono:
+Cellulare: +393457100483
+
+AA AC Sem Pos Cfu Codice Insegnamento Stato Data Voto L CdL Indir
+2023 1 1 E 05 099282 BIOINFORMATICA E GENOMICA FUNZIONALE N    471 BCT
+2023 1 1 E 10 083042 BIOINGEGNERIA CELLULARE N    471 BCT
+2023 1 2 E 10 083047 BIOMATERIALI [C.I.] N    471 BCT
+2023 1 1 E 07 096269 BIOMOLECULES: STRUCTURE AND FUNCTIONS N    471 BCT
+2023 1 2 E 05 056863 CERTIFICAZIONE E ATTIVITA' REGOLATORIE PER DISPOSITIVI MEDICI N    471 BCT
+2023 1 1 E 10 083122 PROGETTAZIONE DI ENDOPROTESI [C.I.] N    471 BCT
+2023 1 1 E 05 098454 STRUTTURE BIOARTIFICIALI E BIOMIMETICHE N    471 BCT
+2023 1 2 A 10 083149 VALUTAZIONE FUNZIONALE E RIABILITAZIONE MOTORIA [C.I.] N    471 BCT
+Colonna Pos: 'E'=Effettivo, 'S'=Soprannumero, 'A'=Autonomo, 'O'=Obbligo, 'D'=Debito
+Colonna Stato: 'N'=Non sostenuto, 'S'=Sostenuto, 'C'=Convalidato, 'A'=Autocertificato, 'P'=Ripete            
+
+Media voti: (media riferita al piano approvato dell'anno precedente) N.D. - Totale crediti piano: 62.0 - Totale crediti utili per la Laurea: 62.0 - Totale crediti in
+soprannumero: 0.0 - Totale crediti richiesti: 62.0

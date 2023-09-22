@@ -4,6 +4,25 @@ import os
 from PyPDF2 import PdfReader
 import pandas as pd
 
+from PyPDF2 import PdfReader, PdfWriter
+
+# Create folder named "split" if does not  exists
+if not os.path.exists("split"):
+    os.mkdir("split")
+if not os.path.exists("output"):
+    os.mkdir("output")
+
+file_name = 'TuttiIPiani.pdf'
+# pages = (121, 130)
+from PyPDF2 import PdfWriter, PdfReader
+
+inputpdf = PdfReader(open(file_name, "rb"))
+
+for i in range(len(inputpdf.pages)):
+    output = PdfWriter()
+    output.add_page(inputpdf.pages[i])
+    with open(os.path.join("split",f"page{i}.pdf"), "wb") as outputStream:
+        output.write(outputStream)
 
 # %%
 folder = "split"
@@ -18,7 +37,7 @@ for nf,file in enumerate(os.listdir(folder)):
     try:
         table = table[0].df
     except:
-        print(f">> Error on {file}")
+        print(f"\n         >> Error on {file}")
         fileerrors.append(file)
         continue
     reader = PdfReader(file)
@@ -38,11 +57,10 @@ for nf,file in enumerate(os.listdir(folder)):
         else:
             print()
     except:
-        print(f">> Cannot find name on {file}")
+        print(f"\n          >> Cannot find name on {file}")
         fileerrors.append(file)
         continue
     
-    print(f"> Processing: {name}")
     if name in allnames:
         print("DUPLICATE")
     allnames.append(name)
@@ -67,3 +85,16 @@ for nf,file in enumerate(os.listdir(folder)):
 with open("errors.txt", "w") as f:
     f.write(str(fileerrors))
 
+# %%
+folder = "output"
+print(f"> Found {len(os.listdir(folder))} files")
+
+output_file_bag = ""
+for nf,file in enumerate(os.listdir(folder)):
+    #Read file
+    with open(os.path.join(folder,file), "r") as f:
+        text = f.read()
+        output_file_bag += text + "\n\n"
+        
+with open("PIANI_PARSED.txt", "w") as f:
+    f.write(output_file_bag)

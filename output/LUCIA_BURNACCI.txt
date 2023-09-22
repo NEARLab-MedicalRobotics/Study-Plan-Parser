@@ -1,0 +1,36 @@
+Politecnico di Milano
+Piano di Studi - A.A. 2023
+Nome: LUCIA
+Cognome: BURNACCI
+Matricola: 226144
+Corso di Studi: Mag. (ord. 270) 471 - BIOMEDICAL ENGINEERING - INGEGNERIA BIOMEDICA (MI)
+Indirizzo: INGEGNERIA PER CELLULE TESSUTI E BIOTECNOLOGIE - CELLS, TISSUES AND
+BIOTECHNOLOGY - (BCT)
+Posizione Convenzionale:
+Anno di Corso: 2
+Semestre di Ingresso: 1
+Data Presentazione: Tue Sep 12 18:04:21 CEST 2023
+Data Modifica Semestrale:
+e-mail: lucia.burnacci@mail.polimi.it
+Telefono:
+Cellulare: +393463225295
+
+AA AC Sem Pos Cfu Codice Insegnamento Stato Data Voto L CdL Indir
+2022 1 1 E 05 096053 BIOENGINEERING OF NEUROSENSORY SYSTEMS N    471 BCT
+2022 1 1 E 05 099282 BIOINFORMATICA E GENOMICA FUNZIONALE N    471 BCT
+2022 1 1 E 10 083042 BIOINGEGNERIA CELLULARE N    471 BCT
+2022 1 2 E 05 056881 BIOMACHINES (WITH LABORATORY) - BIOE 494 S 19-06-2023 21  471 BCT
+2022 1 2 E 10 083047 BIOMATERIALI [C.I.] N    471 BCT
+2022 1 1 E 07 096269 BIOMOLECULES: STRUCTURE AND FUNCTIONS N    471 BCT
+2022 1 2 E 05 056880 COMPUTATIONAL BIOLOGY OF THE HEART - BIOE 494 N    471 BCT
+2022 1 2 E 05 058013 NANOMEDICINE AND PHARMACEUTICA L INNOVATION N    471 BCT
+2022 1 2 E 10 083149 VALUTAZIONE FUNZIONALE E RIABILITAZIONE MOTORIA [C.I.] S 20-06-2023 28  471 BCT
+2023 2 2 A 10 085836 APPLICAZIONI BIOTECNOLOGICH E E BIOREATTORI [C.I.] N    471 BCT
+2023 2 1 A 10 052372 NEUROENGINEER ING [I.C.] N    471 BCT
+2023 2 2 A 05 052374 PROTEOMICS LABORATORY N    471 BCT
+2023 2 1 A 10 055768 TECNOLOGIE PER LA MEDICINA RIGENERATIVA [C.I.] N    471 BCT
+Colonna Pos: 'E'=Effettivo, 'S'=Soprannumero, 'A'=Autonomo, 'O'=Obbligo, 'D'=Debito
+Colonna Stato: 'N'=Non sostenuto, 'S'=Sostenuto, 'C'=Convalidato, 'A'=Autocertificato, 'P'=Ripete            
+
+Media voti: (media riferita al piano approvato dell'anno precedente) 25.67 - Totale crediti piano: 97.0 - Totale crediti utili per la Laurea: 97.0 - Totale crediti in
+soprannumero: 0.0 - Totale crediti richiesti: 35.0
