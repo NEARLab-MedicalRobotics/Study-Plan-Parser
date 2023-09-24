@@ -6,29 +6,39 @@ import pandas as pd
 
 from PyPDF2 import PdfReader, PdfWriter
 
+# Get name of PDF file
+for file in os.listdir():
+    if file.endswith(".pdf"):
+        file_name = file
+        break
+print(f"> Found PDF file to process: {file_name}")
 # Create folder named "split" if does not  exists
 if not os.path.exists("split"):
     os.mkdir("split")
+    print("> Created folder 'split'")
 if not os.path.exists("output"):
     os.mkdir("output")
-
-file_name = 'TuttiIPiani.pdf'
-# pages = (121, 130)
-from PyPDF2 import PdfWriter, PdfReader
+    print("> Created folder 'output'")
 
 inputpdf = PdfReader(open(file_name, "rb"))
-
-for i in range(len(inputpdf.pages)):
-    output = PdfWriter()
-    output.add_page(inputpdf.pages[i])
-    with open(os.path.join("split",f"page{i}.pdf"), "wb") as outputStream:
-        output.write(outputStream)
+# If dir "split" is empty, split the pdf
+if len(os.listdir("split")) == 0:
+    print("> Splitting PDF file")
+    for i in range(len(inputpdf.pages)):
+        output = PdfWriter()
+        output.add_page(inputpdf.pages[i])
+        with open(os.path.join("split",f"page{i}.pdf"), "wb") as outputStream:
+            output.write(outputStream)
+else: 
+    print("> Found split PDF files, skipping splitting")
 
 # %%
 folder = "split"
 allnames = []
 alreadyparsed = os.listdir("output")
 fileerrors = []
+
+text = []
 print(f"> Found {len(os.listdir(folder))} files")
 for nf,file in enumerate(os.listdir(folder)):
     print(f"> Processing file {nf+1}/{len(os.listdir(folder))}: ",end="")
@@ -38,7 +48,7 @@ for nf,file in enumerate(os.listdir(folder)):
         table = table[0].df
     except:
         print(f"\n         >> Error on {file}")
-        fileerrors.append(file)
+        fileerrors.append(file+" : No table found on this PDF\n\n")
         continue
     reader = PdfReader(file)
     page = reader.pages[0]  
@@ -58,7 +68,8 @@ for nf,file in enumerate(os.listdir(folder)):
             print()
     except:
         print(f"\n          >> Cannot find name on {file}")
-        fileerrors.append(file)
+        table = camelot.read_pdf(file+" : No name found on this PDF\n\n")
+        table = table[0].pdf
         continue
     
     if name in allnames:
@@ -83,6 +94,8 @@ for nf,file in enumerate(os.listdir(folder)):
         f.write(final)
         
 with open("errors.txt", "w") as f:
+    # Join all elements in list
+    fileerrors = "".join(fileerrors)
     f.write(str(fileerrors))
 
 # %%
