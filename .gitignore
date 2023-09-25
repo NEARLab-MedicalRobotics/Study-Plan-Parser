@@ -1,2 +1,4 @@
 output/
 split/
+*.pdf
+__pycache__/
