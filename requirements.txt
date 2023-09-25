@@ -1,0 +1,3 @@
+camelot==13.04.13-gpl-pyqt
+pandas==2.1.1
+PyPDF2==3.0.1

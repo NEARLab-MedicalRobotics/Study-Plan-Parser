@@ -2,7 +2,6 @@
 import camelot
 import os
 from PyPDF2 import PdfReader
-import pandas as pd
 
 from PyPDF2 import PdfReader, PdfWriter
 
@@ -68,8 +67,7 @@ for nf,file in enumerate(os.listdir(folder)):
             print()
     except:
         print(f"\n          >> Cannot find name on {file}")
-        table = camelot.read_pdf(file+" : No name found on this PDF\n\n")
-        table = table[0].pdf
+        fileerrors.append(file+" : No table found on this PDF\n\n")
         continue
     
     if name in allnames:
