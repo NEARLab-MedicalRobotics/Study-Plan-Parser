@@ -1,4 +1,4 @@
 output/
 split/
-# *.pdf
+*.pdf
 __pycache__/
