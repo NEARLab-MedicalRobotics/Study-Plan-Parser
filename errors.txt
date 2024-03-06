@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 split/page105.pdf : No table found on this PDF
 
 split/page303.pdf : No table found on this PDF
@@ -59,4 +60,61 @@ split/page225.pdf : No table found on this PDF
 split/page113.pdf : No table found on this PDF
 
 split/page121.pdf : No table found on this PDF
+=======
+split/page0.pdf : No name found on this PDF but a table has been found
+
+split/page1.pdf : No name found on this PDF but a table has been found
+
+split/page10.pdf : No name found on this PDF but a table has been found
+
+split/page108.pdf : Empty PDF, no name nor table
+
+split/page119.pdf : No name found on this PDF but a table has been found
+
+split/page140.pdf : Empty PDF, no name nor table
+
+split/page143.pdf : No name found on this PDF but a table has been found
+
+split/page154.pdf : No name found on this PDF but a table has been found
+
+split/page167.pdf : No name found on this PDF but a table has been found
+
+split/page169.pdf : Empty PDF, no name nor table
+
+split/page184.pdf : No name found on this PDF but a table has been found
+
+split/page2.pdf : No name found on this PDF but a table has been found
+
+split/page213.pdf : No name found on this PDF but a table has been found
+
+split/page227.pdf : Empty PDF, no name nor table
+
+split/page232.pdf : Empty PDF, no name nor table
+
+split/page247.pdf : Empty PDF, no name nor table
+
+split/page3.pdf : No name found on this PDF but a table has been found
+
+split/page4.pdf : No name found on this PDF but a table has been found
+
+split/page49.pdf : No name found on this PDF but a table has been found
+
+split/page5.pdf : No name found on this PDF but a table has been found
+
+split/page6.pdf : No name found on this PDF but a table has been found
+
+split/page67.pdf : No name found on this PDF but a table has been found
+
+split/page7.pdf : No name found on this PDF but a table has been found
+
+split/page73.pdf : No name found on this PDF but a table has been found
+
+split/page75.pdf : No name found on this PDF but a table has been found
+
+split/page78.pdf : Empty PDF, no name nor table
+
+split/page8.pdf : No name found on this PDF but a table has been found
+
+split/page9.pdf : No name found on this PDF but a table has been found
+>>>>>>> piani marzo 2024
 
