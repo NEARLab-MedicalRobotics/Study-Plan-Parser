@@ -1,0 +1,6 @@
+073211	 01000	Metodi Matematici per l’Ingegneria (BIO-NUCL)
+073213	 00000	Metodi Numerici per l’Ingegneria (BIO-NUCL) 
+070491	 00000	Fondamenti di Calcolo Numerico (1°L)
+070489	 00000	Calcolo delle Probabilità (per ing. Matematica)(1°L)
+060022	 00000	Fondamenti di Ricerca Operativa A
+075641	 00000	Statistica Applicata

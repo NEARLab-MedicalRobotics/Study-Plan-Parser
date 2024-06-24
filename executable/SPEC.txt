@@ -1,0 +1,18 @@
+075244   Biosensori e microtecnologie
+075225   Applicazioni biotecnologiche e bioreattori
+073007   Ingegneria dei sistemi cognitivi
+078086   Neuroprotesi per il controllo motorio
+075256   Metodi bioingegneristici per l'ergonomia
+076161   Tecnologie per il sistema motorio
+073008   Strutture bioartificiali e biomimetiche
+073004   Ingegneria dei tessuti
+075258   Tecnologie per la chirurgia assistita
+075257   Metodi per bioimmagini funzionali e 3-D
+078069   Sistemi informativi sanitari e telemedicina
+075236   Biolinguaggi e bioarchivi
+075224   Analisi di biosistemi e biosegnali complessi
+078089   Genomica computazionale e biomeccanica molecolare (c.i.)
+061289   Sistemi di supporto alla vita
+073561   Fenomeni di trasporto nei sistemi biologici
+075226   Biofluidodinamica 
+073006   Progettazione di endoprotesi 

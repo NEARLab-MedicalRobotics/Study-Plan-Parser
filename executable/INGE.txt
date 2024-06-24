@@ -1,0 +1,53 @@
+073591   Identificazione dei Modelli ed Analisi dei Dati (per Ing.Biomedica)
+061181   Costruzione di macchine (mat)
+061182   Macchine e sistemi energetici (1°L)
+061196   Sistemi energetici (1°L)
+061297   Termofluidodinamica (1°L)
+060111   Meccanica dei fluidi (1°L)
+070787   Climatizzazione ambientale (Bovisa)
+070786   Termofisica degli edifici (Bovisa)
+060081   Meccanica Applicata (1°L)
+076964   Modellistica di sistemi meccanici
+061181   Costruzione di macchine (1°L)
+077933   Disegno e fondamenti di meccanica applicata
+075758   Radiochimica (per applicazioni tecnologiche)
+061384   Applicazioni delle radiazioni nucleari (1°L)
+075729   Applicazioni medicali delle radiazioni
+061398   Radioprotezione (1°L)
+072983   Modellazione numerica nella scienza e ingegneria dei materiali
+078520   Proprietà meccaniche e applicazioni strutturali dei compositi e dei tessuti
+072964   Struttura e proprietà dei metalli
+072984   Nanomateriali
+072998   Scienza dei materiali
+072961   Scienza dei Polimeri
+061164   Caratterizzazione ed analisi delle superfici (1°L)
+072930   Chimica fisica applicata
+073594   Gestione Aziendale (per Ing. Biomedica)
+072454   Sistemi di controllo di gestione
+072455   Organizzazione e risorse umane
+080907   Progettazione elettronica per strumentazione biomedica
+061210   Elettronica dei sistemi digitali I (per Ing. Informatici) (1°L)
+070352   Optoelettronica (1°L)
+072805   Sistemi Elettronici
+070344   Fondamenti di segnali e trasmissione
+072913   Tecniche avanzate per il trattamento delle immagini
+072912   Tecniche avanzate per il trattamento di segnali audio
+070345   Fondamenti di reti di telecomunicazioni
+079087   Internet working with TCP/IP
+073591   Identificazione dei Modelli e Analisi dei Dati (per Ing.Biomedica)
+079788   Model Identification and Adaptive System
+072677   Teoria dei Sistemi (Dinamica non lineare)
+073072   Caos deterministico e applicazioni
+070900   Analisi dei sistemi cooperativi *
+078111   Analisi di Processi di Innovazione e Competizione
+070323   Ingegneria e Tecnologia dei Sistemi di Controllo (1°L)
+072415   Informatica Applicata (1°L)
+070482   Basi di dati 2 (precedenza consigliata: Informatica Applicata)
+072614   Impianti informatici (per il settore dell’informazione)
+072668   Soft Computing
+072615   Ingegneria della Conoscenza (1°L) (precedenza consigliata: Informatica Applicata)
+061200   Sistemi Informativi (1°L) (precedenza consigliata: Informatica Applicata)
+072806   Sensori, segnali e rumore
+070354   Dispositivi elettronici (1°L)
+061213   Misure Elettroniche (per Ing. Fisica)(1°L)
+061240   Fondamenti della misurazione (per il Settore dell’Informazione)

@@ -1,0 +1,12 @@
+078075   Lab. di biomateriali + Lab. di analisi strumentale (c.i.)
+079795   Lab. di caratterizzazione dei tessuti
+078079   Lab. di informatica biomedica e sistemi distribuiti
+073574   Lab. di segnali biomedici
+075223   Lab. di tecnologie elettroniche e biosensori
+078072   Lab. di biocompatibilità e colture cellulari + Lab. di micro e nanostrutture (c.i.)
+083413   Lab. di biofluidodinamica
+078078   
+Lab. di biomeccanica computazionale (c.i.)
+079796   Lab. di costruzioni biomeccaniche
+073588   Lab. di elaborazione di bioimmagini
+073590   Lab. di valutazione funzionale

@@ -1,0 +1,6 @@
+085811	11000	Identificazione dei modelli e data mining c.i.
+085883 	01100	Metodi matematici e numerici per l’ingegneria c.i
+085839 	00010	Biologia Molecolare e Biotecnologie
+091057	00010	BIOLOGIA MOLECOLARE
+091058	00010	BIOTECNOLOGIE
+094765	00010	BIOMOLECOLE:STRUTTURA E FUNZIONI	

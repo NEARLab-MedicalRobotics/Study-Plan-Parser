@@ -1,0 +1,7 @@
+073003   Biologia Molecolare e Biotecnologie
+079797   Proteomica
+00Z956   Clinica ortopedica e traumatologica (MED)
+00Z959   Clinica ostetrica e ginecologica (MED)
+00Z957   Diagnostica per immagini e radioterapia (MED)
+00Z955   Malattie del sistema nervoso (MED)
+00Z954   Semeiotica e sistematica I (apparato cardiovascolare) (MED)

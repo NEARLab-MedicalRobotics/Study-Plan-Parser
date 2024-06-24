@@ -1,0 +1,559 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \mathit{Features}_{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%\documentclass[lineno,sn-mathphys]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+%\documentclass[pdflatex,sn-mathphys]{sn-jnl}% Math and Physical Sciences Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+%%\documentclass[sn-standardnature]{sn-jnl}% Standard Nature Portfolio Reference Style
+%%\documentclass[default]{sn-jnl}% Default
+%%\documentclass[default,iicol]{sn-jnl}% Default with double column layout
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+\usepackage[english]{babel} % The document is in English  
+\usepackage[utf8]{inputenc} % UTF8 encoding
+\usepackage{caption} % Coloured captions
+\usepackage{xcolor} % Coloured captions
+\usepackage{amsthm,thmtools,xcolor} % Coloured "Theorem"
+\usepackage{float}
+
+\usepackage{stfloats}
+% STANDARD MATH PACKAGES
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage[overload]{empheq} % For braced-style systems of equations.
+\usepackage{fix-cm} % To override original LaTeX restrictions on sizes
+\usepackage{subfig}
+% PACKAGES FOR TABLES
+\usepackage{tabularx}
+\usepackage{longtable} % Tables that can span several pages
+\usepackage{colortbl}
+\usepackage{soul}
+\usepackage{mathtools} 
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+\jyear{2022}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[Towards a navigation framework for fetoscopy]{Towards a navigation framework for fetoscopy}
+
+%%=============================================================%%
+%% Prefix	-> \pfx{Dr}
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% NatureName	-> \tanm{Poet Laureate} -> Title after name
+%% Degrees	-> \dgr{MSc, PhD}
+%% \author*[1,2]{\pfx{Dr} \fnm{Joergen W.} \spfx{van der} \sur{Ploeg} \sfx{IV} \tanm{Poet Laureate} 
+%%                 \dgr{MSc, PhD}}\email{iauthor@gmail.com}T
+%%=============================================================%%
+
+\author*[1,2]{\fnm{Alessandro} \sur{Casella}}\email{alessandro.casella@iit.it}
+
+\author[2]{\fnm{Chiara} \sur{Lena}}
+
+\author[3]{\fnm{Dario} \sur{Paladini}}
+
+\author[2]{\fnm{Elena} \sur{De Momi}}
+
+\author[4]{\fnm{Sara} \sur{Moccia}}
+
+\author[1]{\fnm{Leonardo S.} \sur{Mattos}}
+
+\affil[1]{\orgdiv{Department of Advanced Robotics}, \orgname{Istituto Italiano di Tecnologia}, \orgaddress{\street{Via S. Quirico 19d}, \city{Genoa}, \postcode{16163}, \country{Italy}}}
+
+\affil[2]{\orgdiv{Department of Electronic, Information and Bioengineering}, \orgname{Politecnico di Milano}, \orgaddress{\street{Via Giuseppe Ponzio 34}, \city{Milan}, \postcode{20133}, \country{Italy}}}
+
+\affil[3]{\orgdiv{Department of Fetal and Perinatal Medicine}, \orgname{Istituto Giannina Gaslini}, \orgaddress{\street{Via Gerolamo Gaslini 5}, \city{Genoa}, \postcode{16147}, \country{Italy}}}
+
+\affil[4]{\orgdiv{The BioRobotics Institute and Department of Excellence in Robotics and AI}, \orgname{Scuola Superiore Sant'Anna}, \orgaddress{\street{Viale Rinaldo Piaggio 34}, \city{Pontedera}, \postcode{56025}, \country{Italy}}}
+
+%%==================================%%
+%% sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{
+\textbf{Purpose}
+Fetoscopic laser photocoagulation of placental anastomoses is the most effective treatment for Twin-to-twin Transfusion Syndrome (TTTS). A robust mosaic of placenta and its vascular network could support surgeons' exploration of the challenging fetoscopic environment by enlarging the field of view on the surgical site. We here propose an end-to-end learning-based framework for placental mosaicking from intra-operative videos with framea.
+
+\textbf{Methods}
+While current state of the art for fetoscopic mosaicking builds upon the registration of anatomical landmarks (e.g., vessels), which may not always be visible, our framework relies on learning-based features, keypoints and robust transformer-based image-feature matching, without requiring any anatomical priors. We further address the problem of occlusion recovery and frame relocalization a strategy based on the learned features.
+
+\textbf{Results}
+Experiments were conducted on 10 in-vivo TTTS videos (2344 frames in total) from two different fetal surgery centers. The proposed framework was compared with several state-of-the-art approaches, overcoming them with a relocalization success rate of $93.25\%$.
+
+\textbf{Conclusion}
+The obtained results suggest that the proposed framework may support surgeons during TTTS treatment by providing robust FoV expansion.
+%show a promising approach to provide computer-assisted intervention during TTTS treatment, broadening the FoV and thus facilitating the anastomoses localization with a consequent decrease in surgical times.
+}
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+\keywords{Fetal Surgery, Mosaicking, Occlusion Recovery, TTTS, Fetoscopy} 
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+Twin-to-Twin Transfusion Syndrome~(TTTS) is a rare complication affecting 10-15\% of monochorionic diamniotic pregnancies. TTTS is characterized by an unbalanced and chronic blood transfer from one twin (the donor) to the other (the recipient), through communicating placental vessels called anastomoses~\citep{Baschat2011}.
+The recognized elective treatment for TTTS is selective laser photocoagulation of anastomoses originating in the donor's placental territory. This treatment requires precise identification and laser ablation of anastomoses~\citep{beck2012preterm, Deprest2010}.
+The procedure is particularly challenging due to the limited Field of View (FoV), poor visibility due to amniotic fluid turbidity, and variability in illumination. These challenges may impact negatively surgery duration and lead to incomplete ablation of pathological anastomoses, resulting in persistent TTTS.
+
+Mosaicking has been investigated in the field of the fetoscopy. Several methods to tackle this task have been exploited, as in depth discussed in Sec.~\ref{sec:related}. Most of the work in the literature focus on handcrafted features or requires a priori stable segmentation of anatomical structure like blood vessels. 
+While obtaining accurate vessel segmentation might be considered an affordable challenge~\citep{bano2021fetreg}, registration algorithms require robust and coherent segmentation across all frames, and this requirement cannot be guaranteed due to the complexity of fetoscopic images.
+To overcome this problem, the use of stable regions or keypoints across frames, but previous work highlighted that classical algorithms for keypoints detection (i.e. SIFT, ORB) are not suitable for fetoscopic images. Exploiting learning based methods for detecting keypoints can be a solution.
+Compared to non-medical applications, obtaining an annotated dataset for keypoints detection in the intra-operative scenario might not be feasible. For this reason, it might be useful to test the reliability of learning-based models trained on non-medical data.
+%Despite the evolution in mosaicking methodologies, none of the methods in literature is able to deal with the loss of tracking and occlusions (\cite{bano2021fetreg}). The problem of occlusions is of major importance when dealing with fetoscopic mosaicking, as it prevents a correct reconstruction of long frame sequences and decreases robustness.
+
+Furthermore, during mosaicking reconstruction, many events (e.g, total or partial occlusion from fetus, maternal pulses, loss of focus) could compromise the frame tracking, with a consequent failure in mosaicking reconstruction.
+%
+To provide surgeons with context awareness, mosaicking should rapidly manage all these events by recovering from occlusions. 
+While this problem has not been addressed in fetoscopy, in other fields researchers are exploring Simultaneous Localization And Mapping (SLAM) approaches.
+
+
+
+%During mosaicking reconstruction, many events (e.g, total or partial occlusion from fetus, maternal pulses, loss of focus) could lead to tracking loss with a consequent failure in the reconstruction algorithm.
+
+In this paper, we propose an integrated learning-based navigation framework for frame registration from intra-operative fetoscopy videos that can provide robust mosaicking. % with occlusion recovery and frame relocalization. 
+%
+%The proposed framework extends state of the art a learning-based keypoints network (\cite{Sun2021}) integrating keypoint matching, occlusion recovery and frame relocalization. 
+We can summarize our contributions as follows:
+\begin{itemize}
+    \item We propose a  framework inspired to Visual SLAM (\cite{taketomi2017visual})  for robust mosaicking in fetoscopy with occlusion recovery and frame relocalization. Unlike the most recent state of the art (\cite{BanoMosaicking2020}), the approach does not rely on any anatomical priors. % but on learning-based features and keypoints, thus is not affected by structures visbility
+    \item We show that learning-based keypoints and features extracted with the proposed framework pretrained on non-medical data are reliable for fetoscopic mosaicking
+    \item We experimentally validate our approach on 10 in vivo TTTS video sequences, 4 provided by Istituto Giannina Gaslini (Italy), and 6 from the dataset presented in \cite{BanoMosaicking2020} for fair comparison with the literature.
+\end{itemize}
+
+
+\subsection{Related Work}
+\label{sec:related}
+In the last years, mosaicking has been investigated with the goal to support fetal surgeons by providing FoV expansion. 
+The first attempts to obtain panoramic placental images were based on traditional keypoints (e.g., SIFT, ORB) extracted from fetoscopic images and matched to estimate the relative transformations, as described in \cite{Reeff2006, Yang2013, Daga2016, Sadda2019}. 
+These approaches lack in robustness and fail when applied on challenging surgical images with poor contrast and texture paucity (\cite{BanoMosaicking2020}). 
+
+Currently, researchers are exploring Deep-Learning (DL) strategies. In \cite{Gaisser2018}, a Convolutional Neural Network (CNN) is trained supervisely to detect stable image regions around large veins. Despite the promising results, image labeling is challenging and time-consuming. Moreover, the CNN is trained on phantom images and cannot encode high variability of intra-operative images. %, leading to low accuracy in the final registration.
+%Despite the great improvement over approaches based on traditional keypoints, such method requires huge efforts in manually annotating groundtruth. 
+%
+In \cite{Loic2018}, frame registration is achieved through pixel-wise alignment of oriented gradients between consecutive frames. The alignment is robust to contrast changes, showing promising results with in-vivo fetoscopy data. However, the computation time to process a frame pair is a major bottleneck and may not be compatible with real-time mosaicking.
+%
+Deep Sequential Mosaicking (DSM) is proposed in \cite{Bano2019} and \cite{Bano2020}. A neural network is trained with a large number of fetoscopic image pairs, obtained with a procedure of controlled data augmentation, to estimates the homographic transformation between each pair. Texture paucity and the high illumination variability make the direct homography estimation challenging and this may translate in drift or even failure of frame registration.
+
+\cite{BanoMosaicking2020} proposes a framework that includes vessel segmentation and frame registration. Vascular maps of consecutive frames are predicted by the segmentation block. The registration of vessel maps is performed by the frame registration block using the pyramidal Lucas-Kanade algorithm (\cite{LucasKanade1981}). Registration performance is high when vessels are clearly visible. However, vessels can be challenging to see, as reported in Sec.~\ref{sec:intro}, or non-visible at all. Furthermore, the time required for frame-by-frame registration makes the framework unsuitable for real-time applications. 
+
+ % to perform a robust relocalization in case the camera tracking is lost.\hl{cit} 
+%The aim of SLAM is to reconstruct the map of an unknown environment and at the same time to estimate the pose from the sensors. It was first proposed in 1986 (\cite{Smith1986}), and the usual domains of applications are augmented reality and robotics. One of the most explored fields is Visual SLAM (vSLAM), which requires just visual information and is characterized by a lower cost and simpler sensors.
+%\hl{forse questo Ã¨ troppo? meglio togliere il paragrafo?}
+
+
+
+%During the last decade, research on SLAM has increased, and a large variety of new methods has been introduce.
+%One of the most used method ORB-SLAM (\cite{Mur2015, Mur2017}) relies on ORB descriptors to perform the main SLAM threads. Researchers exploited ORB-SLAM in several scenario, including monocular SLAM for endoscopy (\cite{xie2020endoscope}). 
+
+\textcolor{red}{As introduced in Sec. 1, nessuno fa relocal. tuttavia Researchers in close fields are working on ...recovery ecc ecc, anche se nessun ofa fetoscopia}
+\cite{Tateno2017} introduced the integration of SLAM system with CNN. The use of CNN features has shown to provied better mapping and relocalisation accuracy.
+
+Although the wide variety of applications of SLAM techniques, navigation in fetal surgery has not been explored yet, and the research is still very limited.
+Our aim is to investigate if a SLAM framework with learning-based keypoints and features can tackle fetoscopic images challenges and provide support for navigation during fetal surgery.
+
+%such as intensity-based, handcrafted features and fetoscope tracking. An overview of the state of the art and open issues are provided in .
+
+%To experimentally r cvalidautte our framework, we rely on the dataset published in~\cite{bano2019deep}, which is, so far, the only publicly available one for mosaicking. %The dataset includes 6 videos acquired during the actual surgical practice from 6 cases of TTTS.
+
+\section{Method}\label{sec:method}
+\begin{figure}[t!]
+\centering
+\includegraphics[width =0.9\textwidth]{images_thesis/workflow.jpg}
+\caption{Schema of the workflow described in Sec.~\ref{sec:method}. During the feature extraction phase, described in Sec.~\ref{sec:kfmatch}, features from different pyramid levels are extracted and transformed by self-attention and cross-attention. \textit{A} and \textit{B} are two input images, $\mathit{F_{f}^{A}}$ and $\mathit{F_{f}^{B}}$ indicate fine features, while $\mathit{F_{c}^{A}}$ and $\mathit{F_{c}^{B}}$ coarse features. A matching module performs coarse matches and a further refinement, producing keypoints ($\mathit{{Kpts}^{A}}$ and $\mathit{{Kpts}^{B}}$) and descriptors ($\mathit{{Descr}^{A}}$ and $\mathit{{Descr}^{B}}$). Descriptors are used for keyframe extraction, as outlined in Sec.~\ref{sec:keyframe_extraction}, keypoints for homography estimation and then panorama reconstruction (Sec.~\ref{sec:mosaicking_reconstruction}). Coarse features are necessary to perform recovery on the global panorama through a comparison with the found keyframes, as outlined in Sec.~\ref{sec:relocalization}.}
+\label{fig:workflow}
+\end{figure}
+
+The workflow of the presented framework is shown in Fig.~\ref{fig:workflow}.
+%The framework follows Visual SLAM model (\cite{taketomi2017visual}), where images from a fetoscopic camera represent the only information available.
+%During tracking, continuous camera-pose estimation is performed, so correspondences between the current and the following frame is established. The aim of mapping is to produce a global reconstruction of the fetal environment. Relocalization allows the recomputation of the camera-pose with respect to the created map in case tracking is lost.
+%
+The first block of our framework consists of feature extraction and matching block, described in Sec.~\ref{sec:kfmatch}, which processes pairs of consecutive frames and outputs features, matching keypoints and matching descriptors. Keypoints are used for mosaicking reconstruction, as described in Sec.~\ref{sec:mosaicking_reconstruction}. Combining features and matching descriptors allows us to achieve the occlusion recovery mechanism described in Sec. \ref{sec:recovery}.
+
+\subsection{Feature Extraction and Matching}\label{sec:kfmatch}
+The proposed method for feature extraction and keypoints and descriptor matching is based on Local Feature Matching with Transformers (LoFTR) (\cite{Sun2021}).
+LoFTR consists of (i) ResNet18 backbone with Feature Pyramid Network (FPN) trained on MegaDepth dataset (\cite{megadepth}), which extract multi-scale features from the input image pairs, (ii) a transformer module to extract robust keypoints and descriptors on low-texture area, as the placenta, and (iii) a differentiable feature matching module.
+
+
+%We relies on ResNet because its residual structure  lowers the chance of overfitting without increasing model footprint, and  FPN because it is effective in restoring spatial correspondences in localization tasks. 
+ %First level features are defined as coarse features, while features from last level are defined as fine features. %Positional encoding is applied to coarse features to make them position dependent.%Through positional encoding, LoFTR is able to find matches also in textureless regions, differently from traditional feature descriptors techniques, which fail in indistinct areas.
+%
+
+Through ResNet FPN, multi-scale features are extracted from different pyramid levels.
+%
+Coarse features are processed by the transformer module, which is composed by self-attention and cross-attention layers. The rationale of the attention mechanism is to discriminate which input points are important by assigning them high weight. In self-attention layers, the transformer concentrates on mapping meaningful points inside the same image, while in cross-attention layer relevant points between the two input images are mapped. The output of the transformer module should facilitate features matching even in low-texture area, due to the high feature dependency on position and context.
+
+%The equation governing attention layers is:
+%\begin{equation} \label{attention_loftr}
+%\textit{attention}(Q, K, V) = \textit{softmax}(Q \times K^{T})\times V
+%\end{equation}
+%\noindent The similarity between \textit{Q} and every key element is then computed, and used as a score to weight the output. This formulation, however, uses an exponential kernel, which causes a quadratic increase in computational times.
+%To avoid this, LoFTR module introduces linear transformer, with the following kernel function:
+%\begin{equation} \label{kernel_loftr}
+%\begin{aligned}
+%\textit{sim}(Q, K) = \phi(Q) \times \phi(K)^{T}
+%\end{aligned}
+%\end{equation}
+%\noindent where $\phi(\cdot) = elu(\cdot) + 1 $.
+
+
+
+Once features are extracted, feature matching is performed computing the confidence matrix ($\mathit{P_c}$) as:
+
+\begin{equation} \label{eq:conf_loftr}
+P_c(i,j) = \textit{softmax}(S (i, \cdot))_j \times \textit{softmax}(S (\cdot, i))_j
+\end{equation}
+\noindent where \textit{i} and \textit{j} are the $i-\text{th}$ and $j-\text{th}$ feature, and \textit{S} indicates the score matrix between the features. \textit{S} is obtained through the following equation:
+
+\begin{equation} \label{S_loftr}
+S(i,j) = \frac{1}{\tau} \times \left\langle \textrm{Features}_{tr}^{A}(i),  \textrm{Features}_{tr}^{B}(j)\right\rangle
+\end{equation}
+
+\noindent where $\textrm{Features}_{tr}^{A}$ and $\textrm{Features}_{tr}^{B}$ indicate the output features from the transformer module. Since the FPN backbone processes features at different scale, in coarse feature matching the softmax temperature ($\tau$) is used to weight the confidence for each match.
+
+The matching block compute dense matches from transformed features at low resolution through Mutual Nearest Neighbour (MNN). Matches ($M_{c})$ are identified as:
+
+\begin{equation}
+    M_{c} = \{ (i,j) \rvert \forall (i,j) \in \textrm{MNN}(P_{c}, P_{c}(i,j) \ge \theta_{c})\}
+\label{eq:matches_loftr}
+\end{equation}
+\noindent where $\mathit{P_c}$ is the confidence matrix computed in Eq.~\ref{eq:conf_loftr}. Matches with confidence lower than a predefined threshold ($\mathit{\theta_{c}}$) are discarded, to avoid noisy results due to incorrect matches.
+
+Finally, a coarse-to-fine module performs a final refinement with a correlation-based approach. For each coarse match, their position in fine-level feature maps is identified, and a pair of square windows is extracted. Then an attention based module similar to the one described before extracts the transformed feature maps of the considered windows. Each feature map is correlated with all vectors in the transformed feature space of the second image of the pair, producing a probability map for every pixel. The final output is thus represented by all the matches found between the input images, and the descriptors associated with each of the two keypoints sets. 
+
+
+\subsection{Mosaicking reconstruction} \label{sec:mosaicking_reconstruction}
+Set of matching keypoints computed with the method described in Sec.~\ref{sec:kfmatch} are used to estimate the chain of relative transformation between consecutive frames. 
+%
+From set of keypoints, robust RANSAC is used to computed the relative homography () between frames. Each relative homography is then computed with respect to the global reference frame, a blank canvas where the final mosaic is contained. 
+%
+Each new frame is warped and post-processed with exposure fusion algorithm. 
+
+
+Due to the intrinsic characteristics of placental environment and of the relative position with the camera, fetoscopic images are dishomogeneous in illumination: the central part, directly hit by endoscopic light, is brighter, while towards the border the illumination level decreases. Thus, when images are stitched together, darker circular shadows can be seen in correspondence of the borders, worsening the visual quality of the reconstruction. To avoid this effect, a technique of exposure fusion inspired by the work in \cite{Mertens2007} is implemented. %The original images are weighted according to contrast, saturation and well-exposedness. Well-exposedness weights the distance between the pixel intenity value and the value of perfect exposure (i.e., 0.5) based on a Gaussian distribution.
+
+%When the feature extraction is performed through feature based methods, an additional method to estimate camera-poses between image pairs is necessary, as anticipated in Sec.~\ref{sec:feat_extraction}. The actual state of the art for fetoscopic mosaicking, presented in \cite{Bano2020}. A segmentation block composed by a U-Net architecture \cite{Ronneberger2015} is used to predict vascular maps. Vessels images predicted from the described network are aligned and their relative affine transformation is estimated. The registration is realized with the pyramidal Lucas-Kanade framework \cite{LucasKanade1981} with an additional minimization algorithm, Levenberg-Marquardt, to minimize the photometric loss between pairs of images. The obtained relative transformations are used to blend the sequence frames together. 
+
+%When dealing with descriptor based methods instead, it is possible to build the panorama without the need of external algorithms. 
+%Once descriptors are obtained, these are used to compute matching keypoints. Thus, using matching keypoints, the relative transformation between two consecutive frames is computed by means of RANSAC. %Starting from a blank canvas, images are stitched together.% The first image of the sequence is positioned in the centre of the canvas, then the estimated homographies are composed together to build a chain of relative transformations. Each frame is warped in the canvas according to its specific homography, and when the end of the sequence is reached, the result is the final placental panorama. 
+
+
+ 
+%\subsection{Keyframe Extraction}\label{sec:kfsel}
+%The idea of keyframe extraction comes from the observation that in a video sequence, especially when camera movements are limited, close frames carry very similar semantic information. Thus, considering all the input frames for recovery would be redundant. 
+%For this reason, two methods are presented to extract relevant frames, called keyframes, which are far enough in the original sequence to carry meaningful information avoiding redundancy but ensuring good localization performances. \\
+%The first method can be applied when a strong panorama image has already been reconstructed. In this case, under the hypothesis that the reconstruction is correct, keyframes are extracted on the basis of their reciprocal overlap area. The first frame is considered also the first keyframe. While the images are stitched together, the reciprocal overlap between the current frame and the last keyframe found is computed. If this overlap is lower than the 50\% of the keyframe FoV area, the current frame is inserted into the keyframes list. This method is straightforward and has a low computational load, but its major drawback is the dependency on the correctness of the panorama reconstruction. In case of errors in the mosaicking image, also the keyframes extracted are not correct and this will invalidate the reconstruction. 
+
+
+\subsection{Occlusion recovery} \label{sec:recovery}
+%In this section, the recovery algorithm is presented. 
+During placenta exploration, due to the challenges of fetoscopic images, listed in Sec.~\ref{sec:intro},  keypoints tracking can be lost and the mosaicking could fail. The recovery algorithm is divided in two steps: (i) keyframes extraction (Sec.~\ref{sec:keyframe_extraction}), and (ii) frame relocalization (Sec.~\ref{sec:relocalization})
+
+\subsubsection{Keyframes Extraction} \label{sec:keyframe_extraction}
+The idea of keyframe extraction comes from the observation that in a video sequence, especially when camera movements are limited, close frames carry very similar semantic information. Thus, considering all the input frames for recovery would be redundant. 
+%The proposed method for keyframe extraction is based on image descriptors matching and is thus suitable for all descriptor-based methods.
+The first frame of the sequence is considered as the first keyframe. For all the following frames, descriptors that do not match with last keyframe descriptors are discarded until their number is lower than a threshold ($T_{\textrm{discard}}$). 
+When this threshold is reached a new keyframe is selected. Matching is performed through a Mutual Nearest Neighbour algorithm, such that the matches from descriptors \textit{A} to \textit{B} must equal matches from \textit{B} to \textit{A}.
+
+It could still happen that two frames really close in the sequence are both selected as keyframes. To avoid this redundancy, if the computed Euclidean distance between a keyframe couple is lower than a threshold ($D_{\textrm{KF}}$), only the last added keyframe is kept, while the other is discarded.
+
+
+\subsubsection{Relocalization} \label{sec:relocalization}
+
+%During mosaicking reconstruction, many events (e.g, total or partial occlusion from fetus, maternal pulses, loss of focus) could lead to tracking loss with a consequent failure in the reconstruction algorithm.
+%To provide a helpful assistance to the surgeon, the algorithm should rapidly manage all these events by performing a tracking recovery. 
+
+The aim of the relocalization task is thus to correctly register a frame on the final mosaic by recovering the loss of tracking when the camera tracking fails.
+Relevant global features are extracted from each keyframe and the Euclidean distance between all the keyframes and the frame to relocalize is computed. This procedure allows us to identify the nearest keyframe achieving a quick recovery compatible with clinical requirements. 
+Matching keypoints are used to estimate the relative transformation to register the frame with respect to the mosaic already generated. Once the registration has recovered the described SLAM pipeline can restart.
+
+
+\section{Experimental Protocol}\label{sec:exp}
+The dataset used in this work is the combination of the fetoscopic dataset presented at MICCAI 2020 in \cite{Bano2020} and a property dataset from \textit{Department of Fetal and Perinatal Medicine} of \textit{Istituto Giannina Gaslini} in Genoa, Italy. 
+The dataset includes a total of 10 videos and 2344 frames. 
+This multi-centre dataset allows us to consider several challenges of intra-opertive fetoscopic images such as turbidity of the amniotic fluid, high variability of illumination, occlusions, texture paucity and poor image quality.
+Examples of dataset frames are shown in Fig.~\ref{fig:ex_dataset}.
+%\hl{QUI SARA EVIDENZIEREBBE LA CHALLENGE}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=0.9\textwidth]{images_thesis/dataset.png}
+\caption{Examples of frames from the described dataset, for each sequence six frames are shown.}
+\label{fig:ex_dataset}
+\end{figure}
+
+We tested different approaches to achieve the two major tasks of mosaicking and recovery. The approaches can be divided in two classes, feature based and descriptor based. 
+\begin{itemize}
+ \item Feature-based methods do not allow to perform both tasks in an end-to-end fashion. Occlusion recovery is achieved through features extracted from the original images by means of CNN. However, this requires the prior knowledge of relative frames pose estimation. Thus, mosaicking needs an additional dedicated pipeline. For fair comparison with the literature, in feature based methods, we implemented the mosaicking pipeline proposed in \cite{BanoMosaicking2020}.
+\item Descriptor-based approaches instead are able to perform mosaicking reconstruction and tracking recovery in an end-to-end pipeline. We compared our method, based on learning-based descriptors, with SIFT (\cite{Lowe1999}) and ORB (\cite{Rublee2011}), two of the most used descriptors in literature.
+\end{itemize}
+
+To test recovery in feature based methods, we tested several architectures in the following experiments:
+\begin{itemize}
+    \item Experiment 1 (\textit{\textbf{E1}}): VGG16 
+    \item Experiment 2 (\textit{\textbf{E2}}): ResNet5
+\end{itemize}
+
+To test recovery in descriptor based methods, three descriptor classes are implemented, each in a different experiment:
+\begin{itemize}
+    \item Experiment 4 (\textit{\textbf{E4}}): SIFT descriptors
+    \item Experiment 5 (\textit{\textbf{E5}}): ORB descriptors
+    \item Experiment 6 (\textit{\textbf{E6}}): learning-based descriptors extracted with the method outlined in Sec.~\ref{sec:kfmatch}. This represents the proposed framework.
+\end{itemize}
+
+
+Finally, for fair comparison we tested the methods reported so far for evaluation of panorama robustness, compared to the state of the art:
+
+\begin{itemize}
+    \item Experiment 7 (\textit{\textbf{E7}}): \cite{BanoMosaicking2020}.
+    \item Experiment 8 (\textit{\textbf{E8}}): SIFT 
+    \item Experiment 9 (\textit{\textbf{E9}}): ORB
+    \item Experiment 10 (\textit{\textbf{E10}}): Proposed framework with learning-based descriptors extracted through the method outlined in Sec.~\ref{sec:kfmatch}. 
+\end{itemize}
+
+To assess the robustness of the recovery algorithm, different tests were performed. For every video sequence, a random frame is selected, ensuring this is not a keyframe. At this point, the algorithm tries first to relocalize the original frame, then the same procedure is applied also to the same frame, but with the addition of different transformations, to assess the robustness even in case of realistic changes in image characteristics. The considered transformations are:
+
+\begin{itemize}
+    \item Rotation of 10, 30 and 60 degrees.
+    \item Change in image contrast of 0.80, 0.90, 1.10 and 1.20.
+    \item Change in image brightness of 0.80, 0.90, 1.10 and 1.20.
+    \item Image zoomed so that a crop reduction of 20, 30 and 50 pixels is performed. 
+    \item Insertion of a black square patch of 100 x 100 pixels in the centre of the image, to simulate an occlusion where the informative content of the frame is maximum. 
+\end{itemize}
+
+Mosaicking performances is evaluated in terms of Structural Similarity Index Measure (SSIM), defined as:
+
+\begin{equation} \label{eq:ssim}
+\textrm{SSIM}(x,y) = \frac{(2\mu_x\mu_y + c_1)\times (2\mathrm{\sigma}_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + c_1)\times (\sigma_x^2 + \sigma_y^2 + c_2)}
+\end{equation}
+\noindent where $x$ and $y$ are two images with identical size, $\mathit{\mu_{x}}$ is the average of $x$, $\mathit{\mu_{y}}$ is the average of $y$, $\mathit{\sigma_{x}^{2}}$ is the variance of $x$, $\mathit{\sigma_{y}^{2}}$ is the variance of $y$, $\mathit{\sigma_{xy}}$ is the covariance of $x$ and $y$, $L$ is defined as the dynamic range of the pixel values, computed as $2^{\textrm{bits per pixel}-1}$, $\mathit{c_1}$ and $\mathit{c_2}$ are respectively 0.01 and 0.03 as originally reported in \cite{ssim2004}.
+
+According with the findings in (\cite{BanoMosaicking2020}), SSIM is almost constant in case of very small displacements as in case of fetoscopy. For this reason, 5-frame SSIM \textit{s} is better suitable for validation.
+Wilcoxon test was applied in order to evaluate the statistical differences between the implemented method, while to evaluate recovery performance we used the  \textit{Success Rate}, defined as: 
+
+\begin{equation} \label{eq:recovery_metric}
+\textit{Success Rate} = \frac{\#\textit{correct recoveries}}{\#\textit{total recoveries}}\times 100
+\end{equation}
+
+
+
+
+\section{Results}\label{sec:reseults}
+
+A performance comparison about mosaicking reconstruction between the proposed method and the state of the art introduced in \cite{Bano2020} is depicted in Fig.~\ref{fig:results_mosaicking}.
+%The results of Wilcoxon test on mosaicking evaluation are represented as well, showing a significant difference between the implemented methods. 
+Examples of the reconstructed mosaics for all the described methods can be seen in Fig.~\ref{fig:examples_mosaicking}.
+
+\begin{figure}[t!]
+    \centering
+        \makebox[0.9\textwidth]{
+        \begin{tabular}{cccc}
+        \textbf{State of the Art} & \textbf{SIFT} & \textbf{ORB} & \textbf{Proposed} \\
+        \includegraphics[width=.2\textwidth]{images_thesis/row1_col1.jpg} &  \includegraphics[width=.2\textwidth]{images_thesis/row1_col2.jpg} &\includegraphics[width=.2\textwidth]{images_thesis/row1_col3.jpg} & \includegraphics[width=.2\textwidth]{images_thesis/row1_col4.jpg}\\
+        
+        \includegraphics[width=.2\textwidth]{images_thesis/row2_col1.jpg} &  \includegraphics[width=.2\textwidth]{images_thesis/row2_col2.jpg} &\includegraphics[width=.2\textwidth]{images_thesis/row2_col3.jpg} & \includegraphics[width=.2\textwidth]{images_thesis/row2_col4.jpg}\\
+        
+        \includegraphics[width=.2\textwidth]{images_thesis/row3_col1.jpg} &  \includegraphics[width=.2\textwidth]{images_thesis/row3_col2.jpg} &\includegraphics[width=.2\textwidth]{images_thesis/row3_col3.jpg} & \includegraphics[width=.2\textwidth]{images_thesis/row3_col4.jpg}\\
+        
+        \includegraphics[width=.2\textwidth]{images_thesis/row4_col1.jpg} &  \includegraphics[width=.2\textwidth]{images_thesis/row4_col2.jpg} &\includegraphics[width=.2\textwidth]{images_thesis/row4_col3.jpg} & \includegraphics[width=.2\textwidth]{images_thesis/row4_col4.jpg}\\
+        \end{tabular}
+        }
+        
+    \caption{Mosaicking comparison between State of the Art, SIFT, ORB and the proposed method on four dataset videos. Outcomes show a large variability between different methods and between different videos.}
+    \label{fig:examples_mosaicking}
+\end{figure}
+
+Results for recovery task are shown in Table~\ref{tab:results_relocalize_hm}.
+Among descriptor based approaches, the highest value is reached with the proposed algorithm ($93.75\%$), and a noticeable improvement is reached in comparison with the other descriptor based approaches (SIFT and ORB). 
+In feature based approaches high values are obtained with ResNet50 ($83.13\%$) and ResNet50 with VLAD ($82.50\%$), significantly higher than the outcome of VGG. Examples of the performed tests for recovery assessment can be seen in Fig.~\ref{fig:examples_mosaicking}. 
+The frame that needs to be relocalized is circled in blue. The nearest keyframe identified to perform the recovery is circled in red. 
+
+%\input{table_relocalize_hm}
+
+\begin{figure}[t!]
+    \centering
+    \makebox[0.7\textwidth]{
+    \begin{tabular} { m{.12\textheight} m{.15\textheight} m{.15\textheight} m{.15\textheight} }
+    \textit{E1} &                    \includegraphics[width=.15\textheight]{images_thesis/11.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/21.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/31.jpg} \\ 
+    \textit{E2} & \includegraphics[width=.15\textheight]{images_thesis/12.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/22.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/32.jpg} \\ 
+    \textit{E3} & \includegraphics[width=.15\textheight]{images_thesis/13.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/23.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/33.jpg} \\ 
+    \textit{E4} & 
+    \includegraphics[width=.15\textheight]{images_thesis/14.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/24.jpg} &
+    \textbf{    Failure} \\  
+    \textit{E5} & \includegraphics[width=.15\textheight]{images_thesis/15.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/25.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/35.jpg} \\ 
+    \textbf{Proposed} & \includegraphics[width=.15\textheight]{images_thesis/16.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/26.jpg} &
+    \includegraphics[width=.15\textheight]{images_thesis/36.jpg} 
+    \end{tabular}}
+    \caption{Recovery examples from three different dataset videos. Frame circled in blue is the frame to relocalize, frame circled in red is the nearest keyframe.}
+    \label{fig:examples_reloc}
+\end{figure}
+
+A performance comparison about mosaicking reconstruction between the proposed method, SIFT, ORB, and the state of the art introduced in \cite{Bano2020} is depicted in Fig.~\ref{fig:results_mosaicking}. The results of Wilcoxon test on mosaicking evaluation are represented as well, showing a significant difference between the implemented methods. The metric used is \textit{s}, described in Sec.~\ref{sec:exp} and based on the calculation of SSIM score between the central crops of regularly sampled frames.
+
+\begin{figure}[t!]
+    \centering
+        \makebox[0.8\textwidth]{
+        \begin{tabular}{cc}
+        \includegraphics[width = \textwidth]{images_thesis/metric_mosaicking_0.jpg} &  \\
+        \includegraphics[width = \textwidth]{images_thesis/metric_mosaicking_1.jpg}\\
+        \end{tabular}
+        }
+    \caption{Performance comparison between (in order from left to right) state of the art, SIFT, ORB, proposed method, for the dataset videos, according to the metric described in Sec.~\ref{sec:exp}. Stars indicate the results of Wilcoxon test on mosaicking evaluation.}
+    \label{fig:results_mosaicking}
+\end{figure}
+
+%The presented framework outperforms both the methods based on traditional descriptors (SIFT and ORB) that show failures in some of the dataset videos. The performance analysis for panorama reconstruction with the state of the art shows generally comparable performances, with slightly better outcomes in some videos, and slightly worse outcomes in others.
+%However, the proposed method introduces a smaller number of outliers, and show more stable results throughout the length of the video sequence. Examples of the reconstructed mosaics for all the described methods can be seen in Fig.~\ref{fig:examples_mosaicking}.
+
+\begin{table}
+\centering
+\caption[Results of Recovery with hit-or-miss metric for the experiments decribed in the ablation study]{Results of relocalization with hit-or-miss metric for the experiments decribed in the ablation study and referred as Success Rate. In bold: highest values of performance metrics.}
+\label{tab:results_relocalize_hm}
+\begin{tabular}{llc}
+                                       &                                             & \multicolumn{1}{l}{\textbf{Success Rate}} \\ \hline
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{VGG16 \textit{(E1)}}               & \multicolumn{1}{c|}{26.25\%}                     \\ \cline{2-3} 
+\multicolumn{1}{|l|}{Feature Based}    & \multicolumn{1}{l|}{ResNet50 \textit{(E2)}}            & \multicolumn{1}{c|}{83.13\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{ResNet50 w/VLAD \textit{(E3)})}     & \multicolumn{1}{c|}{82.50\%}                    \\ \hline
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{SIFT \textit{(E4)}}              & \multicolumn{1}{c|}{20\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{Descriptor Based} & \multicolumn{1}{l|}{ORB \textit{(E5)}}               & \multicolumn{1}{c|}{30\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{\textbf{Proposed \textit{(E6)}}} & \multicolumn{1}{c|}{\textbf{93.75\%}}           \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}\label{sec:disc}
+%\hl{Ã¨ necessario questo paragrafo di recap?}
+%This work introduces a robust framework to perform occlusion recovery while reconstructing a placental mosaic from fetoscopic video sequences. The framework was tested with two different approaches, feature based and descriptor based. For feature based approaches, three different network architectures were tested to perform recovery, \textit{E1}, \textit{E2} and \textit{E3}. Mosaicking in all these cases was realized through the state of the art method described in \cite{BanoMosaicking2020}. Three descriptor based approaches were implemented \textit{E4}, \textit{E5}, and the proposed method, also referred as \textit{E6} in the ablation study (Sec.~\ref{sec:exp}). \\
+
+The results of mosaicking reconstruction in Fig.~\ref{fig:results_mosaicking} show that the presented framework clearly outperforms both the methods based on traditional descriptors (SIFT and ORB). In particular, SIFT achieves the worst results, with a complete failure in the reconstruction of Videos 4, 6, 9, and 10. ORB performances are slightly better compared to SIFT, with just one failure in Video 6, but still far below the outcome of the proposed approach. The poor performances of traditional descriptor based methods were to be expected. As stated in Sec.~\ref{sec:intro}, fetoscopic images have poor quality and low contrast. The lack of contrast is challenging for descriptor based methods, as they usually individuate keypoints and their relative descriptors by searching edges, where a sudden change in contrast can be seen. As a consequence, the number of keypoints found in low contrast images is small, leading to a higher probability of failure in image homography estimation. The impossibility to estimate the relative transformation leads to the consequent failure of both recovery and mosaicking reconstruction.
+
+%Due to intrinsic image characteristics, such as lack of contrast, poor quality, presence of
+
+\begin{table}
+\centering
+\caption[Results of Recovery with hit-or-miss metric for the experiments decribed in the ablation study]{Results of relocalization with hit-or-miss metric for the experiments decribed in the ablation study and referred as Success Rate. In bold: highest values of performance metrics.}
+\label{tab:results_relocalize_hm}
+\begin{tabular}{llc}
+                                       &                                             & \multicolumn{1}{l}{\textbf{Success Rate}} \\ \hline
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{VGG16 \textit{(E1)}}               & \multicolumn{1}{c|}{26.25\%}                     \\ \cline{2-3} 
+\multicolumn{1}{|l|}{Feature Based}    & \multicolumn{1}{l|}{ResNet50 \textit{(E2)}}            & \multicolumn{1}{c|}{83.13\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{ResNet50 w/VLAD \textit{(E3)})}     & \multicolumn{1}{c|}{82.50\%}                    \\ \hline
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{SIFT \textit{(E4)}}              & \multicolumn{1}{c|}{20\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{Descriptor Based} & \multicolumn{1}{l|}{ORB \textit{(E5)}}               & \multicolumn{1}{c|}{30\%}                    \\ \cline{2-3} 
+\multicolumn{1}{|l|}{}                 & \multicolumn{1}{l|}{\textbf{Proposed \textit{(E6)}}} & \multicolumn{1}{c|}{\textbf{93.75\%}}           \\ \hline
+\end{tabular}
+\end{table} large particles and illumination variability, classical descriptor methods, like SIFT and ORB fail in detecting strong keypoints to stitch images together, as well as strong descriptors to correctly relocalize a frame. Classical feature based methods, like VGG, ResNet50 and ResNet50 with VLAD for dimensionality reduction were also tried, but due to the necessity of another method for camera-pose estimation, a learning-based approach was preferred. 
+
+%To extract and match strong keypoints, descriptors and features, the proposed method implements a learning-based approach. A ResNet backbone enriched with FPN and matching modules extracts features, matching keypoints and matching descriptors. Descriptors are used to extract the relevant keyframes from the original sequence. Keypoints are used for mosaicking reconstruction. The combination of feature extraction and matching and mosaicking reconstruction allows to perform tracking and mapping phases of SLAM pipeline. Matching descriptors and features are the inputs for occlusion recovery, which constitutes the relocalization task in a classical SLAM pipeline. The frame where tracking was lost is compared with all the found keyframes. In correspondence with the nearest keyframe the relocalization is computed. 
+
+The performance analysis between the proposed method and the state of the art for mosaicking reconstruction shows a slight worsening in three videos (Video 1, 2 and 7 in Fig.~\ref{fig:results_mosaicking}), an almost identical outcome in Video 5 and a general improvement in the remaining six videos. The proposed method introduces a smaller number of outliers, with more stable results throughout the length of the video sequence and a generally lower inter-quartile range, despite the high variability in image characteristics, as described in Sec.~\ref{sec:intro} and shown in the frames reported in Fig.~\ref{fig:ex_dataset}. This advancement with respect to the state of the art is possible by means of the described learning-based approach. Wilcoxon's statistical test showed a significant difference between the implemented methods.
+
+In Fig.~\ref{fig:examples_mosaicking} final mosaics from 4 different sequences are reported. For each sequence, all the methods are tested. The first sequence shows comparable performances between state of the art and the proposed method, while SIFT and ORB introduce a large drift inaccuracy which invalidates the final panorama. In the second sequence, state of the art shows the best performances, with a slightly better outcome than the learning-based method proposed. SIFT and ORB introduce a drift error in the reconstruction, although lower than the first sequence. This could be due to the specific video characteristics. This sequence has better illumination conditions, with clearly visible vessels and no disturbance from the laser. In the third sequence, the proposed method clearly outperforms all the other approaches. State of the art performances appear quite poor with the introduction of a large deformation. In the last sequence SIFT and ORB performances are low, while state of the art and the proposed method are comparable, with a more faithful reconstruction with respect to the original video performed by the proposed framework. 
+
+Together with a slight improvement in mosaicking performances, the proposed method allows performing panorama reconstruction and occlusion recovery in a unique end-to-end pipeline, while feature based methods (\textit{E1}, \textit{E2} and \textit{E3} in the ablation study in Sec.~\ref{sec:exp}) require an additional approach for relative homography estimation, necessary for mosaicking. The state of the art method shows a good reconstruction accuracy, but requires long computational times. Several hours are needed to estimate the homographies of a sequence through the Lucas-Kanade algorithm. Thus, such algorithm can be not compatible with real-time requirements. The proposed method can process an average of 10 pairs of images per second. Even though the real-time requirements are not fulfilled yet, the obtained computational times show a consistent improvement with respect to state of the art. The presented framework can thus be considered a first step towards the real-time clinical requirements. 
+
+The proposed learning-based framework achieves the best results in recovery, with a success rate of $93.75\%$. 
+Recovery results in Table~\ref{tab:results_relocalize_hm} indicate that traditional descriptor based methods like SIFT and ORB lack robustness for the considered task.\\
+
+Among the considered feature based approaches, \textit{E2} reaches the best outcome, with a success rate of $83.13\%$. \textit{E3} achieves a success rate of $82.50\%$, comparable with \textit{E2}, with the major advantage of a lighter structure, due to the smaller size of feature vectors. As a consequence, also computational times and memory load are decreased. The ResNet50 structure proves to be more accurate than VGG, whose success rate in recovery, $26.25\%$, is really lower compared to ResNet50. The explanation can be found in the structure of the network, as VGG has a simpler structure, with a lower number of layers and no skip connections. \\
+
+In Fig.~\ref{fig:examples_reloc} different recovery tests examples are shown. In the first sequence VGG, ResNet50 and the proposed approach show good performances. The performances of ResNet50 with VLAD for dimensionality reduction are lower with respect to the simple \textit{E1}, while \textit{E4} and \textit{E5} outcomes are poor. In SIFT and ORB, the reconstructed panorama shows large drift inaccuracy accumulation, so it is reasonable to conclude that the low recovery performances are due to the descriptors found rather than to the proposed algorithm. In the second sequence, recovery performances of all the feature based approaches are poor. The reason can be found in the low quality mosaic. In fact, by observing the outcome of \textit{E3}, it is clear that the proposed framework correctly performs recovery even on top of a wrong panorama. This demonstrates the robustness of the proposed method. \textit{E1} introduces a really large drift error, leading to a recovery failure. \textit{E2} performances seem good, but it is necessary to consider that the camera movement estimations are wrong, so we can conclude that this recovery is not totally reliable. In the second sequence, the proposed method clearly outperforms the other tested approaches, reaching the best recovery performances. 
+
+In the third considered sequence, neither \textit{E3} nor \textit{E4} are reliable, as ORB introduces a large inaccuracy in the estimation, and SIFT ends with a complete failure. Among feature based methods, the outcome of \textit{E1} is poor, while \textit{E2} and \textit{E3} reach a precise recovery. The best performance is achieved by the proposed method. Similarly to the mosaicking task, intrinsic image characteristics influence these performances. In the first sequence illumination level is high and constant, and vessels are clearly visible. This leads to the achievement of better outcomes. The second video is characterized by the constant presence of laser light, which is a disturbance source for features extraction procedure, while the third sequence is dark and visibility of vascular structure is poor. As a consequence, the extraction of features or descriptors is more challenging, leading to lower performances.
+
+\section{Conclusion}
+\label{sec:conclusion}
+This work proposes a learning-based SLAM framework for placental mosaicking from intra-operative videos, with occlusion recovery performed in an end-to-end fashion. To the best of our knowledge, the presented algorithm is the first attempt to manage occlusions in a fetoscopic mosaicking pipeline. 
+
+The proposed framework outperforms traditional descriptor based approaches like SIFT or ORB for both mosaicking reconstruction and recovery.
+Feature based methods described in Sec.~\ref{sec:exp} achieve good performances both in mosaicking and recovery tasks. However, differently from the presented approach, that can perform both tasks in an end-to-end pipeline, feature based approaches require an additional method to estimate relative frame transformations. The possibility to perform all the described tasks in a unique framework is of primary importance, as it allows to speed up the computational times, increasing the compatibility with clinical requirements. 
+
+Qualitative and quantitative results achieved during the evaluation phase show a great improvement in the recovery task. Recovery was tested also in case of transformations applied to the original frame. 
+
+The proposed framework still shows drift inaccuracy accumulating during panorama reconstruction, especially in presence of rapid movements, loss of focus or subsequences where the camera is still and pictures texture-less regions. Albeit this limitation does not affect recovery performances, it decreases the correctness of the final reconstructed panorama. To overcome this limitation, a possible future improvement could be the implementation of a global optimization algorithm in the SLAM pipeline.
+
+To conclude, the results achieved suggest that the presented framework is able to reconstruct placental panorama even when the tracking from fetoscopic camera is lost, as the recovery task allows to relocalize the frame in correspondence of which the stitching algorithm failed. This could be helpful during TTTS surgery when the FoV of the surgeon is very limited. A broader view of the placenta could decrease the duration of the surgical intervention, and facilitate anastomoses identification, thus increasing the photocoagulation success rate. 
+
+%%===========================================================================================%%
+%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+%% system, please include the references within the manuscript file itself. You may do this  %%
+%% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
+%% file, and delete the associated \verb+\bibliography+ commands.                            %%
+%%===========================================================================================%%
+
+\bibliography{sn-bibliography}% common bib file
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+%% Default %%
+%%\input sn-sample-bib.tex%
+
+\end{document}

@@ -1,0 +1,13 @@
+083042	0001	Bioingegneria Cellulare 
+083061 	0010	Costruzioni Biomeccaniche 
+083099 	0101	Elettronica biomedica 
+083112	1000	Impianti Ospedalieri e Sicurezza 
+083040 	1000	Analisi e Organizzazione di Sistemi Sanitari 
+083043 	1011	Biomacchine (con Laboratorio) 
+083047 	0011	Biomateriali c.i. 
+083066 	1101	Elaborazione di Segnali e Immagini Biomediche c.i. 
+083416 	1000	Informatica Medica c.i. 
+083122 	0010	Progettazione di Endoprotesi c.i. 
+083125 	1100	Tecnologie per Sensori e Strumentazione Clinica c.i. 
+093167  1100    Tecnologie per Sensori e Strumentazione Clinica
+083149 	1100	Valutazione Funzionale e Riabilitazione Motoria c.i. 

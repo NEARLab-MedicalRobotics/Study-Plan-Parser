@@ -1,0 +1,9 @@
+085833	0011	Ingegneria tessutale e biomimetica C.I. 
+085813 	1000	Metodi e applicazioni di sanita’ digitale 
+085829 	0101	Neuroingegneria C.I. 
+085814 	1100	Tecnologie per l’analisi e la virtualizzazione motoria 
+085817 	1001	Analisi avanzate dei dati per la medicina e la bioinformatica
+085836  0011	Applicazioni biotecnologiche e bioreattori C.I. 
+085820 	1100	Metodi per immagini biomediche e chirurgia assistita C.I. 
+085821 	1011	Progettazione di sistemi di supporto alla vita
+094766	1111	FLUID DYNAMIC APPROACH FOR THE DESIGN OF CARDIOVASCULAR DEVICES

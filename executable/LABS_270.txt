@@ -1,0 +1,19 @@
+078075	0010	Lab.biomateriali e Lab. di analisi strumentale (c.i.) 
+079795 	0010	Lab.caratterizzazione dei tessuti 
+085840 	0001	Lab.modellistica biomolecolare 
+073574 	1100	Lab.segnali biomedici 
+085822 	1100	Lab.robotica medica e tecnologie in chirurgia 
+075223 	0100	Lab.tecnologie elettroniche e biosensori 
+078072 	0001	Lab.biocompatibilità e colture cellulari + Lab. di micro e nanostrutture (c.i.) 
+
+083413 	0011	Lab.biofluidodinamica 
+078078 	0011	Lab.biomeccanica computazionale (c.i.) 
+073587 	0011	LABORATORIO DI BIOMECCANICA COMPUTAZIONALE (C.I.) 
+079796 	0010	Lab.costruzioni biomeccaniche 
+073588 	1100	Lab.elaborazione di bioimmagini 
+073590 	1100	Lab.valutazione funzionale 
+079797 	0001	Proteomica
+096206 	0001	LABORATORIO DI MICRO E NANOSTRUTTURE
+096212 	0010	LABORATORIO DI BIOMATERIALI E ANALISI STRUMENTALE
+096204	0011	LABORATORIO DI BIOCOMPATIBILITA' E COLTURE CELLULARI  
+096283	0011	LABORATORIO DI BIOMECCANICA COMPUTAZIONALE

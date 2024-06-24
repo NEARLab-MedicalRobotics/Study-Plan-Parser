@@ -1,0 +1,5 @@
+081274   Introduzione alla scienza dei Materiali (Chimica) (1°L)
+072973   Chimica strutturale di materiali organici
+061385   Fisica Sperimentale D (1°L)
+061395   Tecnologie Fisiche (1°L)
+061391   Ottica Biomedica (1°L)

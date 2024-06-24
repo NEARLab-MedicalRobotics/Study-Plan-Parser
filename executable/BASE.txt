@@ -1,0 +1,15 @@
+083042   Bioingegneria Cellulare
+083061   Costruzioni Biomeccaniche
+083099   Elettronica biomedica
+083112   Impianti Ospedalieri e Sicurezza c.i.
+083416   Informatica Medica c.i.
+083122   Progettazione di Endoprotesi c.i.
+083040   Analisi e Organizzazione di Sistemi Sanitari
+083043   Biomacchine (con Laboratorio)
+083047   Biomateriali c.i.
+083066   Elaborazione di Segnali e Immagini Biomediche c.i.
+083125   Tecnologie per Sensori e Strumentazione Clinica c.i.
+083149   Valutazione Funzionale e Riabilitazione Motoria c.i.
+
+
+
