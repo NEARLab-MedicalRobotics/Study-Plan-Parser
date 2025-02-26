@@ -67,13 +67,9 @@ for nf,file in enumerate(os.listdir(folder)):
             print()
     except:
         print(f"\n          >> Cannot find name on {file}")
-<<<<<<< HEAD:parser.py
-        fileerrors.append(file+" : No table found on this PDF\n\n")
-=======
         # table = camelot.read_pdf(file+" : No name found on this PDF  \n\n")
         fileerrors.append(file+" : No name found on this PDF but a table has been found\n\n")
         # table = table[0].pdf
->>>>>>> piani marzo 2024:parser_piani.py
         continue
     
     if name in allnames:
